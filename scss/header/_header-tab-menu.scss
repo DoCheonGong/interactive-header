@@ -1,0 +1,52 @@
+.header-tab-menu {
+    width: 100%;
+    top: -120px;
+    position: fixed;
+    height: 200px;
+    background-color: #fff;
+    z-index: 5;
+    transition: 0.3s;
+
+    .main-wrap {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+
+        #gnb {
+            display: flex;
+            text-align: center;
+
+            li {
+                width: 200px;
+
+                a {
+                    display: block;
+                    width: 100%;
+                    font: bold 16px/1 "Arial";
+                    color: #333;
+                    padding: 10px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #0001;
+                    }
+                }
+
+                ul {
+                    li {
+                        padding: 5px 10px;
+                        font-size: 13px;
+                        color: #666;
+                        cursor: pointer;
+                        transition: 0.2s;
+
+                        &:hover {
+                            background-color: #0001;
+                            color: #333;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

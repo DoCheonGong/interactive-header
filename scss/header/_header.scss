@@ -1,0 +1,132 @@
+.header {
+    width: 100%;
+    height: 130px;
+    position: fixed;
+    border-bottom: 2px solid #0DB6EC;
+    background-color: #fff;
+    z-index: 10;
+    transition: 0.3s;
+
+    .main-wrap {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+
+        .top-bar {
+            width: 100%;
+            height: 60%;
+            display: flex;
+
+            .left {
+                width: 30%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                .bars {
+                    width: 40px;
+                    height: 40px;
+                    cursor: pointer;
+                    padding: 8px;
+                    border-radius: 50%;
+
+                    &:hover {
+                        background-color: #00000015;
+                    }
+                }
+            }
+
+            .center {
+                width: 40%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                .logo {
+                    width: 80px;
+                    margin: 0 auto;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .right {
+                width: 30%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                .search-icon {
+                    width: 40px;
+                    height: 40px;
+                    cursor: pointer;
+                    padding: 8px;
+                    border-radius: 50%;
+
+                    img {
+                        width: 100%
+                    }
+
+                    &:hover {
+                        background-color: #0002;
+                    }
+                }
+
+                .subscribe {
+                    padding: 8px 20px;
+                    border: 2px solid #0DB6EC;
+                    font-size: 13px;
+                    transition: 0.2s;
+                    margin-left: 20px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #0DB6EC;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .bottom-bar {
+            width: 100%;
+            height: 40%;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            line-height: 40px;
+
+            a {
+                width: 200px;
+                height: 50px;
+                margin: 0 10px;
+                padding: 5px 10px;
+                color: #333;
+                transition: 0.2s;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    z-index: -5;
+                    transform: translateX(-50%) scaleX(0%);
+                    left: 50%;
+                    bottom: 5px;
+                    width: 80%;
+                    border-bottom: 10px solid #a9ff47;
+                    transition: 0.3s;
+                }
+
+                &:hover {
+                    &::before {
+                        transform: translateX(-50%) scaleX(100%);
+                    }
+                }
+            }
+        }
+    }
+}
